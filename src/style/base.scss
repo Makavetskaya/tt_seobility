@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  html {
+    cursor: url('../assets/cursor.png') 10 10, pointer;
+    overflow-x: hidden
+    
+  }
+
+  body{
+    background-color: #8dbdba;
+    transition: all 9s ease;
+  }
+ .container {
+     max-width: 1170px;
+     padding: 0 15px;
+     margin: 0 auto;
+}  
+  .purple {
+      background-color: #8675ba;
+  }
+  
+  .hide{
+    transform: translateX(-200%);
+  }
+  .hide1{
+    transform: translateX(200%);
+  }
+
+  .hideSecondWallpaper{
+    transform: translateX(200%);
+  }
+  
+  .animation{
+    animation: hide 3s linear;
+  }
+  @keyframes hide{
+    0%{
+      transform: translateX(0);
+      opacity: 1;
+     }
+     50%{
+      opacity: 0.8;
+     }
+     70%{
+      opacity: 0.5;
+     }
+     90%{
+      opacity: 0.2;
+     }
+     100%{
+      transform: translateX(-200%);
+      opacity: 0.1;
+     }
+  }
+
+  .animationWallpaper{
+    animation: show 5s linear;
+  }
+
+  @keyframes show{
+    0%{
+      transform: translateX(0);
+      opacity: 0.1;
+     }
+     50%{
+      opacity: 0.3;
+     }
+     70%{
+      opacity: 0.5;
+     }
+     100%{
+      transform: translateX(100%);
+      opacity: 1;
+     }
+  }
+
+  .wrapper {
+    position: relative;
+  }  
+  .active{
+    display: block;
+}
+  
+//   .section-1,
+//     .section-2 {
+//     position: absolute;
+//     height: 95vh;
+//     width: 100vw;
+//     }
+
+    .section-2 {
+    // left: 100vw;
+    }
