@@ -7,7 +7,7 @@ const wallPaper2 = document.querySelector('.second-wallpaper')
 const texBlock = document.querySelector('.text-block')
 const texBlock2 = document.querySelector('.text-block2')
 
-///// появление и ищезновение шаров 
+///// появление и исчезновение  шаров 
 
 const bubbles = document.querySelectorAll('.bubble-green');
 bubbles.forEach(b => window.addEventListener('scroll', ()=>{
